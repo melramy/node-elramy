@@ -59,7 +59,7 @@ const user_delete = (req, res) => {
 };
 
 const user_put = (req, res) => {
-  User.updateOne({ _id: req.params.id }, req.body)
+  User.updateOne({_id: req.params.id}, req.body)
     .then((result) => {
       res.redirect("/");
     })
